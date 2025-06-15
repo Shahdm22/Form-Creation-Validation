@@ -37,12 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
         feedbackDiv.style.display = "block";
         if (isValid) {
             feedbackDiv.textContent = "Registration successful!";
-            feedbackDiv.style.color = "#28a745"; // green
-            feedbackDiv.style.backgroundColor = "#d4edda";
+            feedbackDiv.style.color = "#28a745"; // success green
         } else {
             feedbackDiv.innerHTML = messages.join("<br>");
-            feedbackDiv.style.color = "#d8000c"; // red
-            feedbackDiv.style.backgroundColor = "#ffbaba";
+            feedbackDiv.style.color = "#dc3545"; // expected red
         }
     });
 });
